@@ -1,0 +1,75 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Asegura que la página ocupe toda la pantalla */
+html, body {
+    height: 100%; /* Ocupa el 100% de la altura del viewport */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor principal */
+#cuerpo {
+    display: flex;
+    flex-direction: column; /* Asegura que las secciones se apilen verticalmente */
+    min-height: 100%; /* Asegura que ocupe al menos la altura de la pantalla */
+}
+
+/* Encabezado */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* Contenido principal */
+main {
+    flex: 1; /* Este hace que el contenido principal se expanda para ocupar el espacio disponible */
+    padding: 20px;
+}
+
+main h2 {
+    color: black;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Lista de miembros */
+main ul {
+    list-style: none;
+    padding: 0;
+}
+
+main ul a {
+    display: inline-block;
+    margin: 10px 0;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+main ul a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Pie de página */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
